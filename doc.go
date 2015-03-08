@@ -3,7 +3,7 @@
 // license that can be found in the LICENSE file.
 
 /*
-Package gorilla/sessions provides cookie and filesystem sessions and
+Package outrightmental/go-sessions provides cookie and filesystem sessions and
 infrastructure for custom session backends.
 
 The key features are:
@@ -23,7 +23,7 @@ Let's start with an example that shows the sessions API in a nutshell:
 
 	import (
 		"net/http"
-		"github.com/gorilla/sessions"
+		"github.com/outrightmental/go-sessions"
 	)
 
 	var store = sessions.NewCookieStore([]byte("something-very-secret"))
@@ -88,7 +88,7 @@ so it is easy to register new datatypes for storage in sessions:
 
 	import(
 		"encoding/gob"
-		"github.com/gorilla/sessions"
+		"github.com/outrightmental/go-sessions"
 	)
 
 	type Person struct {
